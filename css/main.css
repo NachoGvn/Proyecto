@@ -1,0 +1,464 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+    
+
+
+.divBody {
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: grid;
+    grid-template-areas:"header"
+                        "main"
+                        "info"
+                        "footer";
+                        
+
+    background-color: rgb(255, 255, 255);
+}
+
+
+header {
+    overflow: hidden;
+    grid-area: header;
+    
+}
+nav {
+    top: 0;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition:all .2s ease-in-out;
+    
+}
+main {
+    overflow: hidden;
+    grid-area: main;
+}
+
+
+.menu {
+    background-color: rgb(10, 0, 0);
+    padding: 30px;
+    top: 0px;
+    z-index: 2;  
+    color: white;
+    position: sticky;
+    
+    
+    
+   
+}
+
+.menuLista {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 70px;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.imgFondoIndex {
+    padding: 1.5em;
+    background-image: url('../img/271237891_901745523822787_156612221471523007_n.jpg');
+    font-weight: normal;
+    text-align: center;
+    font-size: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+
+
+.productos {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-column-gap: 50px;
+    grid-template-areas:"tituloindex tituloindex"
+                        "producto producto2"
+                        "pro1 pro2";
+    font-size: 40px;
+    background-image: url('../img/b89ebed7f9964efbed1010c2447a7ed2.jpg');
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.tituloIndex {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    grid-area: tituloindex;
+    
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    grid-area: producto;
+    
+}
+.producto1 {
+    display: flex;
+    justify-content: center;
+    grid-area: producto2;
+   
+
+}
+.pro1 {
+    display: flex;
+    justify-content: end;
+    grid-area: pro1;
+}
+.pro2 {
+    grid-area: pro2;
+}
+.info {
+    overflow: hidden;
+    grid-area: info;
+
+}
+
+
+.cocktails_{
+    margin-bottom: 4em;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-areas: "titule titule titule"
+                        "co1 co2 co3";
+    grid-template-rows: 2em;
+    font-size: 60px;
+    text-align: center;
+    padding: 10.3px;
+    
+    
+}
+.co1{
+    grid-area: co1;
+}
+.co2 {
+    grid-area: co2;
+}
+
+.co3 {
+    grid-area: co3;
+}
+.TituloCocktailsIndex {
+    grid-area: titule;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: gray;
+    list-style: none;
+    text-align: justify;
+    grid-area: footer;
+
+    
+
+}
+
+.footerGrid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-areas: "footerTitulo footerTitulo1 footerTitulo2";
+    gap: 15rem;
+}
+
+.footerTitulo {
+    padding: 10px;
+    grid-area: footerTitulo;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+.footerTitulo1 {
+    padding: 10px;
+    grid-area: footerTitulo1;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+   
+
+}
+.footerTitulo2 {
+    padding: 10px;
+    grid-area: footerTitulo2;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+.contactano {
+    padding: 10px;
+    grid-area: contactano;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+.footerP {
+    padding: 10px;
+    grid-area: footerP;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+
+.redesSociales {
+    padding: 10px;
+    grid-area: redesSociales;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.tituloP {
+    background-image: url('../img/vieja-textura-de-madera-para-el-fondo-del-web-46832940.jpg');
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    
+    
+
+
+}
+
+.subtituloP {
+    font-size: 60px;
+    padding: 50px;
+    margin: 100px;
+    text-align: center;
+
+
+}
+
+.gin{
+    text-align: justify;
+    font-size: 20px;
+    margin: 50px;
+    padding: 60px;
+}
+
+.ginProductos {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+.tituloS {
+    padding: 1.5em;
+    background-image: url('../img/271237891_901745523822787_156612221471523007_n.jpg');
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+
+
+}
+
+.subtituloS {
+    text-align: center;
+    font-size: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 70px;
+    text-transform: uppercase;
+
+
+}
+.imageS {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.epigrafe {
+    font-size: 30px;
+}
+
+.dondeEncontrarnos { 
+    text-align: center;
+    font-size: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 100px;
+}
+.iframe {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.DondeTitulo {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.contacto {
+    background-image: url('../img/vieja-textura-de-madera-para-el-fondo-del-web-46832940.jpg');
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    font-size: 100px;
+    
+
+}
+
+.formulario {
+    background-color: whitesmoke ;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.contactanos {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.cocktail {
+    text-align: justify;
+    font-size: 20px;
+    margin: 50px;
+    padding: 60px;
+}
+
+
+
+.tituloTragos {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        background-color: rgb(10, 0, 0);
+        padding: 30px;
+        top: 0px;
+        z-index: 2;  
+        color: white;
+        position: sticky;
+        
+        
+        
+       
+    }
+    
+    .menuLista {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        gap: 40px;
+        letter-spacing: 0.1em;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .imgFondoIndex {
+        padding: 1.5em;
+        background-image: url('../img/271237891_901745523822787_156612221471523007_n.jpg');
+        font-weight: normal;
+        text-align: center;
+        font-size: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-transform: uppercase; 
+        }
+    .productos {
+        
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-areas:"tituloindex "
+                                "producto"
+                                "pro1"
+                                "producto2"
+                                 "pro2";
+            font-size: 20px;
+            background-image: url('../img/b89ebed7f9964efbed1010c2447a7ed2.jpg');
+            background-repeat: none;
+            background-size: cover;
+            justify-items: center;
+            padding: 100px;
+        
+        
+    }
+    .cocktails_ {
+        margin-bottom: 4em;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-areas: "titule"
+                            "co1"
+                            "co2"
+                            "co3";
+        grid-template-rows: 2em;
+        font-size: 60px;
+        text-align: center;
+        padding: 10.3px; 
+        }
+    .TituloCocktailsIndex {
+        grid-area: titule;
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        text-transform: uppercase;
+        }
+    .tituloS {
+            padding: 1.5em;
+            background-image: url('../img/271237891_901745523822787_156612221471523007_n.jpg');
+            background-repeat: none;
+            background-size: cover;
+            text-align: center;
+            font-size: 50px;
+            text-transform: uppercase;
+        
+        
+        }
+    .subtituloS {
+            text-align: center;
+            font-size: 60px;
+            padding-right: 100px;
+            padding-left: 100px;
+            margin: 70px;
+            text-transform: uppercase;
+            }
+        .footerGrid {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: 10rem 10rem 10rem;
+            grid-template-areas: "footerTitulo"
+                                    "footerTitulo1"
+                                    "footerTitulo2";
+            align-items: center;
+            }
+    
+}
+
