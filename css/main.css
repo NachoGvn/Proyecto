@@ -6,6 +6,8 @@
     
 
 
+    
+
 .divBody {
     font-family: 'PT Sans Narrow', sans-serif;
     display: grid;
@@ -103,19 +105,24 @@ main {
     grid-area: tituloindex;
     
 }
-.producto{
+.producto:hover{
     display: flex;
     justify-content: center;
     grid-area: producto;
-    
+    transition:all .5s ease-in-out;
+    -webkit-transform:scale(0.8);transform:scale(0.8);
+    filter: blur(5px);
 }
-.producto1 {
+.producto1:hover {
     display: flex;
     justify-content: center;
     grid-area: producto2;
-   
+    transition:all .5s ease-in-out;
+    filter: blur(5px);
+    -webkit-transform:scale(0.8);transform:scale(0.8);
 
 }
+
 .pro1 {
     display: flex;
     justify-content: end;
@@ -144,16 +151,26 @@ main {
     
     
 }
-.co1{
+.co1:hover{
+    transition:all .5s ease-in-out;
+    -webkit-transform:scale(0.8);transform:scale(0.8);
+    filter: blur(5px);
     grid-area: co1;
 }
-.co2 {
+.co2:hover {
+    transition:all .5s ease-in-out;
+    -webkit-transform:scale(0.8);transform:scale(0.8);
+    filter: blur(5px);
     grid-area: co2;
 }
 
-.co3 {
+.co3:hover {
+    transition:all .5s ease-in-out;
+    -webkit-transform:scale(0.8);transform:scale(0.8);
+    filter: blur(5px);
     grid-area: co3;
 }
+
 .TituloCocktailsIndex {
     grid-area: titule;
     display: flex;
