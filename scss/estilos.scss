@@ -18,17 +18,20 @@
 }
 
 header {
+    
     overflow: hidden;
     grid-area: header;
     
     nav { 
         top: 0;
-        overflow: hidden;
         text-decoration: none;
+
+        
         ul {
             li {
                 transform: scale(1.2);
                 transition:all .2s ease-in-out;
+                
             }
         }
         
@@ -41,21 +44,29 @@ main {
     grid-area: main;
 }
 .menu {
-    background-color: rgb(10, 0, 0);
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    background-color: black;
     padding: 30px;
     top: 0px;
     z-index: 2;  
     color: white;
     position: sticky;
+    .logo {
+        justify-content: flex-start;
+    }
     .menulista {
-        display: flex;
-        list-style: none;
         justify-content: flex-end;
+        list-style: none;
         gap: 70px;
         letter-spacing: 0.1em;
         font-size: 20px;
         text-decoration: none;
         
+    }
+    nav ul li {
+        display: flex;
     }
 
     }
@@ -192,13 +203,14 @@ footer {
         text-transform: uppercase;
     }
 
-.footerTitulo2 {
+    .footerTitulo2 {
     padding: 10px;
     grid-area: footerTitulo2;
     text-align: center;
     font-size: 17px;
     text-transform: uppercase;
-}
+    text-decoration: none;
+    }
 
 }
 

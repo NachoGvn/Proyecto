@@ -13,7 +13,6 @@ header {
   grid-area: header; }
   header nav {
     top: 0;
-    overflow: hidden;
     text-decoration: none; }
     header nav ul li {
       transform: scale(1.2);
@@ -24,20 +23,26 @@ main {
   grid-area: main; }
 
 .menu {
-  background-color: #0a0000;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  background-color: black;
   padding: 30px;
   top: 0px;
   z-index: 2;
   color: white;
   position: sticky; }
+  .menu .logo {
+    justify-content: flex-start; }
   .menu .menulista {
-    display: flex;
-    list-style: none;
     justify-content: flex-end;
+    list-style: none;
     gap: 70px;
     letter-spacing: 0.1em;
     font-size: 20px;
     text-decoration: none; }
+  .menu nav ul li {
+    display: flex; }
 
 .imgFondoIndex {
   padding: 1.5em;
@@ -158,4 +163,5 @@ footer {
     grid-area: footerTitulo2;
     text-align: center;
     font-size: 17px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-decoration: none; }
