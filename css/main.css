@@ -71,11 +71,11 @@ a:visited {
       transition: all .2s ease-in-out; }
 
 .imgFondoIndex {
-  padding: 1.5rem;
   background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+  padding: 1.5em;
   font-weight: normal;
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase; }
@@ -114,8 +114,6 @@ a:visited {
     -webkit-transform: scale(0.8);
     transform: scale(0.8); }
   .productos .pro1 {
-    display: flex;
-    justify-content: end;
     grid-area: pro1; }
   .productos .pro2 {
     grid-area: pro2; }
@@ -157,6 +155,8 @@ a:visited {
       transform: scale(0.8);
       filter: blur(5px);
       grid-area: co3; }
+  .infoIndex .imagenIn {
+    width: 100%; }
 
 .gin {
   font-size: 20px; }
@@ -295,24 +295,28 @@ a:visited {
   .cocktail .p1 {
     display: flex;
     justify-content: center;
+    text-align: justify;
     padding-right: 170px;
     padding-top: 15px;
     padding-bottom: 40px; }
   .cocktail .p2 {
     display: flex;
     justify-content: center;
+    text-align: justify;
     padding-right: 170px;
     padding-top: 15px;
     padding-bottom: 40px; }
   .cocktail .p3 {
     display: flex;
     justify-content: center;
+    text-align: justify;
     padding-right: 170px;
     padding-top: 15px;
     padding-bottom: 40px; }
   .cocktail .p4 {
     display: flex;
     justify-content: center;
+    text-align: justify;
     padding-right: 170px;
     padding-top: 15px;
     padding-bottom: 40px; }
@@ -417,8 +421,6 @@ footer nav ul {
     text-decoration: none; }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
-  body {
-    background-color: red; }
   .menu {
     display: grid;
     grid-template-areas: "logo menuLista";
@@ -441,8 +443,8 @@ footer nav ul {
         transform: scale(1.2);
         transition: all .2s ease-in-out; }
   .imgFondoIndex {
-    padding: 1.5rem;
     background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    padding: 1.5rem;
     font-weight: normal;
     text-align: center;
     font-size: 5.5rem;
@@ -454,7 +456,7 @@ footer nav ul {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 0.5fr 0.5fr;
     grid-column-gap: 3rem;
-    grid-template-areas: "tituloindex" "producto" "pro1" "producto2" "pro2";
+    grid-template-areas: "tituloindex tituloindex" "producto producto1" "pro1 pro2";
     font-size: 1.8rem;
     background-image: url("../img/b89ebed7f9964efbed1010c2447a7ed2.jpg");
     background-repeat: none;
@@ -474,18 +476,14 @@ footer nav ul {
       -webkit-transform: scale(0.8);
       transform: scale(0.8);
       filter: blur(5px); }
-      .productos .producto:hover .imagenI {
-        width: 20%; }
     .productos .producto1:hover {
       display: flex;
       justify-content: center;
-      grid-area: producto2;
+      grid-area: producto1;
       transition: all .5s ease-in-out;
       filter: blur(5px);
       -webkit-transform: scale(0.8);
       transform: scale(0.8); }
-      .productos .producto1:hover .imagenI {
-        width: 20%; }
     .productos .pro1 {
       display: flex;
       justify-content: center;
@@ -493,4 +491,636 @@ footer nav ul {
     .productos .pro2 {
       grid-area: pro2;
       display: flex;
-      justify-content: center; } }
+      justify-content: center; }
+  .infoIndex {
+    overflow: hidden;
+    grid-area: infoIndex; }
+    .infoIndex .cocktails_ {
+      margin-bottom: 4rem;
+      display: grid;
+      grid-column-gap: 1.2rem;
+      grid-template-areas: "titule titule titule" "co1 co2 co3";
+      grid-template-rows: 2em;
+      grid-column-gap: 50px;
+      font-size: 80px;
+      padding: 10.3px; }
+      .infoIndex .cocktails_ .TituloCocktailsIndex {
+        grid-area: titule;
+        display: flex;
+        justify-content: center;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        padding-bottom: 1.4rem; }
+      .infoIndex .cocktails_ .co1 {
+        grid-area: co1; }
+      .infoIndex .cocktails_ .co2 {
+        grid-area: co2; }
+      .infoIndex .cocktails_ .co3 {
+        grid-area: co3; }
+  .imagenI {
+    width: 75%; }
+  .imagenIn {
+    width: 100%; }
+  footer {
+    overflow: hidden;
+    background-color: gray;
+    list-style: none;
+    text-align: justify; }
+  .footer0 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: gray;
+    text-align: justify;
+    grid-area: footer; }
+  .footerGrid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-areas: "footerTitulo footerTitulo1 footerTitulo2";
+    gap: 15rem; }
+    .footerGrid .footerTitulo {
+      padding: 0.8rem;
+      grid-area: footerTitulo;
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase; }
+      .footerGrid .footerTitulo nav ul {
+        list-style: none; }
+    .footerGrid .footerTitulo1 {
+      padding: 0.8rem;
+      grid-area: footerTitulo1;
+      text-align: center;
+      font-size: 0.8rem;
+      text-transform: uppercase; }
+    .footerGrid .footerTitulo2 {
+      padding: 1.2rem;
+      grid-area: footerTitulo2;
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .gin {
+    font-size: 20px; }
+    .gin .tituloP {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+      background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+      font-weight: normal;
+      text-align: center;
+      font-size: 5.5rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-transform: uppercase; }
+    .gin .subtituloP {
+      font-size: 3.5rem;
+      padding: 1.2rem;
+      margin: 5rem;
+      text-align: center; }
+  .infoProdu {
+    overflow: hidden; }
+    .infoProdu .productoS {
+      display: grid;
+      grid-template-areas: "ginN ginR" "gin1 gin2" "gin20 ginA" "gin3 gin4";
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 0.5fr 0.5fr; }
+      .infoProdu .productoS .ginN {
+        grid-area: ginN;
+        display: flex;
+        justify-content: center;
+        text-align: center; }
+      .infoProdu .productoS .ginR {
+        grid-area: ginR;
+        display: flex;
+        justify-content: center; }
+      .infoProdu .productoS .gin20 {
+        grid-area: gin20;
+        display: flex;
+        justify-content: center; }
+      .infoProdu .productoS .ginA {
+        grid-area: ginA;
+        display: flex;
+        justify-content: center; }
+      .infoProdu .productoS .gin1 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin1; }
+      .infoProdu .productoS .gin2 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin2; }
+      .infoProdu .productoS .gin3 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin3; }
+      .infoProdu .productoS .gin4 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin4; }
+  .imagenPro {
+    width: 80%; }
+  .tituloCocktail {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    font-weight: normal;
+    font-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase; }
+  .cocktail {
+    display: grid;
+    grid-template-areas: "tituloTragos tituloTragos2" "img1 img2" "p1 p2" "tituloTragos3 tituloTragos4" "img3 img4" " p3 p4";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-column-gap: 1.2rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .cocktail .tituloTragos {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .tituloTragos1 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .tituloTragos2 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .tituloTragos3 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 10rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .img1 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .img2 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .img3 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .img4 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .p1 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+    .cocktail .p2 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+    .cocktail .p3 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+    .cocktail .p4 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+  .tituloS {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    font-weight: normal;
+    text-align: center;
+    font-size: 5.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase; }
+  .subtituloS {
+    font-size: 3.5rem;
+    padding: 0.8rem;
+    margin: 3rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .epigrafe {
+    font-size: 1.9rem;
+    padding: 0.8rem;
+    margin-bottom: 6rem;
+    text-align: center; }
+  .fondoCon {
+    background-image: url("../img/vieja-textura-de-madera-para-el-fondo-del-web-46832940.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .imageS {
+    display: flex;
+    justify-content: center; }
+  .infoSobre .dondeEncontrarnos .dondeTitulo {
+    font-size: 2.2rem;
+    padding-top: 4rem;
+    padding-bottom: 1.2rem;
+    text-align: center; }
+  .infoSobre .dondeEncontrarnos .dondeSub {
+    font-size: 1.6rem;
+    padding-bottom: 1.2rem;
+    text-align: center; }
+  .infoSobre .dondeEncontrarnos .iframe {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem; } }
+
+@media screen and (max-width: 480px) {
+  .menu {
+    display: grid;
+    padding: 2rem;
+    z-index: 2;
+    position: sticky;
+    top: 1rem; }
+    .menu .logo {
+      display: flex;
+      justify-content: flex-start; }
+    .menu .menuLista {
+      display: flex;
+      justify-content: flex-end;
+      gap: 3rem;
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      padding-top: 40px; }
+      .menu .menuLista .enlaces:hover {
+        text-decoration: none;
+        transform: scale(1.2);
+        transition: all .2s ease-in-out; }
+  .imgFondoIndex {
+    background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    padding: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    font-size: 5.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase; }
+  .productos {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-column-gap: 3rem;
+    grid-template-areas: "tituloindex tituloindex" "producto producto1" "pro1 pro2";
+    font-size: 1.8rem;
+    background-image: url("../img/b89ebed7f9964efbed1010c2447a7ed2.jpg");
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    padding: 10px; }
+    .productos .tituloIndex {
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+      grid-area: tituloindex; }
+    .productos .producto:hover {
+      display: flex;
+      justify-content: center;
+      grid-area: producto;
+      transition: all .5s ease-in-out;
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      filter: blur(5px); }
+    .productos .producto1:hover {
+      display: flex;
+      justify-content: center;
+      grid-area: producto1;
+      transition: all .5s ease-in-out;
+      filter: blur(5px);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); }
+    .productos .pro1 {
+      display: flex;
+      justify-content: center;
+      grid-area: pro1; }
+    .productos .pro2 {
+      grid-area: pro2;
+      display: flex;
+      justify-content: center; }
+  .infoIndex {
+    overflow: hidden;
+    grid-area: infoIndex; }
+    .infoIndex .cocktails_ {
+      margin-bottom: 4rem;
+      display: grid;
+      grid-column-gap: 1.2rem;
+      grid-template-areas: "titule titule titule" "co1 co2 co3";
+      grid-template-rows: 2em;
+      grid-column-gap: 50px;
+      font-size: 80px;
+      padding: 10.3px; }
+      .infoIndex .cocktails_ .TituloCocktailsIndex {
+        grid-area: titule;
+        display: flex;
+        justify-content: center;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        padding-bottom: 1.4rem; }
+      .infoIndex .cocktails_ .co1 {
+        grid-area: co1; }
+      .infoIndex .cocktails_ .co2 {
+        grid-area: co2; }
+      .infoIndex .cocktails_ .co3 {
+        grid-area: co3; }
+  .imagenI {
+    width: 75%; }
+  .imagenIn {
+    width: 100%; }
+  footer {
+    overflow: hidden;
+    background-color: gray;
+    list-style: none;
+    text-align: justify; }
+  .footer0 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: gray;
+    text-align: justify;
+    grid-area: footer; }
+  .footerGrid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-areas: "footerTitulo footerTitulo1 footerTitulo2";
+    gap: 15rem; }
+    .footerGrid .footerTitulo {
+      padding: 0.8rem;
+      grid-area: footerTitulo;
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase; }
+      .footerGrid .footerTitulo nav ul {
+        list-style: none; }
+    .footerGrid .footerTitulo1 {
+      padding: 0.8rem;
+      grid-area: footerTitulo1;
+      text-align: center;
+      font-size: 0.8rem;
+      text-transform: uppercase; }
+    .footerGrid .footerTitulo2 {
+      padding: 0.8rem;
+      grid-area: footerTitulo2;
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .gin {
+    font-size: 20px; }
+    .gin .tituloP {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+      background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+      font-weight: normal;
+      text-align: center;
+      font-size: 5.5rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-transform: uppercase; }
+    .gin .subtituloP {
+      font-size: 3.5rem;
+      padding: 1.2rem;
+      margin: 5rem;
+      text-align: center; }
+  .infoProdu {
+    overflow: hidden; }
+    .infoProdu .productoS {
+      display: grid;
+      grid-template-areas: "ginN ginR" "gin1 gin2" "gin20 ginA" "gin3 gin4";
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 0.5fr 0.5fr; }
+      .infoProdu .productoS .ginN {
+        grid-area: ginN;
+        display: flex;
+        justify-content: center;
+        text-align: center; }
+      .infoProdu .productoS .ginR {
+        grid-area: ginR;
+        display: flex;
+        justify-content: center; }
+      .infoProdu .productoS .gin20 {
+        grid-area: gin20;
+        display: flex;
+        justify-content: center; }
+      .infoProdu .productoS .ginA {
+        grid-area: ginA;
+        display: flex;
+        justify-content: center; }
+      .infoProdu .productoS .gin1 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin1; }
+      .infoProdu .productoS .gin2 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin2; }
+      .infoProdu .productoS .gin3 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin3; }
+      .infoProdu .productoS .gin4 {
+        display: flex;
+        justify-content: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-area: gin4; }
+  .imagenPro {
+    width: 80%; }
+  .tituloCocktail {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    font-weight: normal;
+    font-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase; }
+  .cocktail {
+    display: grid;
+    grid-template-areas: "tituloTragos tituloTragos2" "img1 img2" "p1 p2" "tituloTragos3 tituloTragos4" "img3 img4" " p3 p4";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-column-gap: 1.2rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .cocktail .tituloTragos {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .tituloTragos1 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .tituloTragos2 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 8rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .tituloTragos3 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding-right: 10rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .cocktail .img1 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .img2 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .img3 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .img4 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .cocktail .p1 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+    .cocktail .p2 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+    .cocktail .p3 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+    .cocktail .p4 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 2.2rem; }
+  .tituloS {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    font-weight: normal;
+    text-align: center;
+    font-size: 5.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase; }
+  .subtituloS {
+    font-size: 3.5rem;
+    padding: 0.8rem;
+    margin: 3rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .epigrafe {
+    font-size: 1.9rem;
+    padding: 0.8rem;
+    margin-bottom: 6rem;
+    text-align: center; }
+  .fondoCon {
+    background-image: url("../img/vieja-textura-de-madera-para-el-fondo-del-web-46832940.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .imageS {
+    display: flex;
+    justify-content: center; }
+  .infoSobre .dondeEncontrarnos .dondeTitulo {
+    font-size: 2.2rem;
+    padding-top: 4rem;
+    padding-bottom: 1.2rem;
+    text-align: center; }
+  .infoSobre .dondeEncontrarnos .dondeSub {
+    font-size: 1.6rem;
+    padding-bottom: 1.2rem;
+    text-align: center; }
+  .infoSobre .dondeEncontrarnos .iframe {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem; } }
