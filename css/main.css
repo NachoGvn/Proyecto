@@ -5,53 +5,77 @@
   margin: 0px;
   padding: 0px; }
 
-.divBody {
+.divBodyI {
   font-family: "PT Sans Narrow", sans-serif;
   display: grid;
-  grid-template-areas: "header" "main" "info" "footer";
+  grid-template-areas: "headerr" "main" "infoIndex" "footer";
+  background-color: white; }
+
+.divBodyP {
+  font-family: "PT Sans Narrow", sans-serif;
+  display: grid;
+  grid-template-areas: "headerr" "main" "infoProdu" "footer";
+  background-color: white; }
+
+.divBodyCon {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: white; }
+
+.divBodySo {
+  font-family: "PT Sans Narrow", sans-serif;
+  display: grid;
+  grid-template-areas: "headerr" "main" "infoSobre" "footer";
+  background-color: white; }
+
+.divBodyCock {
+  font-family: "PT Sans Narrow", sans-serif;
+  display: grid;
+  grid-template-areas: "headerr" "tituleCocktail" "main" "footer";
   background-color: white; }
 
 header {
-  overflow: hidden;
-  grid-area: header; }
-  header nav {
-    top: 0;
-    text-decoration: none; }
-    header nav ul li {
-      transform: scale(1.2);
-      transition: all .2s ease-in-out; }
+  grid-area: headerr; }
 
 main {
   overflow: hidden;
   grid-area: main; }
 
-.menu {
-  display: flex;
+a:link {
   text-decoration: none;
-  list-style: none;
+  color: white; }
+
+a:visited {
+  text-decoration: none;
+  color: white; }
+
+.menu {
+  display: grid;
+  grid-template-areas: "logo menuLista";
   padding: 30px;
-  top: 0px;
   z-index: 2;
-  color: white;
-  position: sticky; }
+  position: sticky;
+  top: 10px; }
   .menu .logo {
+    display: flex;
     justify-content: flex-start; }
-  .menu .menulista {
+  .menu .menuLista {
+    display: flex;
     justify-content: flex-end;
-    list-style: none;
     gap: 70px;
     letter-spacing: 0.1em;
     font-size: 20px;
-    text-decoration: none; }
-  .menu nav ul li {
-    display: flex; }
+    padding-top: 40px; }
+    .menu .menuLista .enlaces:hover {
+      text-decoration: none;
+      transform: scale(1.2);
+      transition: all .2s ease-in-out; }
 
 .imgFondoIndex {
-  padding: 1.5em;
+  padding: 1.5rem;
   background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
   font-weight: normal;
   text-align: center;
-  font-size: 100px;
+  font-size: 5.5rem;
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase; }
@@ -96,44 +120,263 @@ main {
   .productos .pro2 {
     grid-area: pro2; }
 
-.info {
+.infoIndex {
   overflow: hidden;
-  grid-area: info; }
-  .info .cocktails_ {
+  grid-area: infoIndex; }
+  .infoIndex .cocktails_ {
     margin-bottom: 4em;
     display: grid;
     grid-column-gap: 20px;
     grid-template-areas: "titule titule titule" "co1 co2 co3";
     grid-template-rows: 2em;
-    font-size: 60px;
-    text-align: center;
+    grid-column-gap: 50px;
+    font-size: 80px;
     padding: 10.3px; }
-  .info .tituloCocktailsIndex {
-    grid-area: titule;
+    .infoIndex .cocktails_ .TituloCocktailsIndex {
+      grid-area: titule;
+      display: flex;
+      justify-content: center;
+      font-size: 100px;
+      text-transform: uppercase;
+      padding-bottom: 20px; }
+    .infoIndex .cocktails_ .co1:hover {
+      transition: all .5s ease-in-out;
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      filter: blur(5px);
+      grid-area: co1; }
+    .infoIndex .cocktails_ .co2:hover {
+      transition: all .5s ease-in-out;
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      filter: blur(5px);
+      grid-area: co2; }
+    .infoIndex .cocktails_ .co3:hover {
+      transition: all .5s ease-in-out;
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      filter: blur(5px);
+      grid-area: co3; }
+
+.gin {
+  font-size: 20px; }
+  .gin .tituloP {
     display: flex;
     justify-content: center;
+    padding: 1.5em;
+    background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    font-weight: normal;
+    text-align: center;
     font-size: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-transform: uppercase; }
-  .info .co1:hover {
-    transition: all .5s ease-in-out;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    filter: blur(5px);
-    grid-area: co1; }
-  .info .co2:hover {
-    transition: all .5s ease-in-out;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    filter: blur(5px);
-    grid-area: co2; }
-  .info .co3:hover {
-    transition: all .5s ease-in-out;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    filter: blur(5px);
-    grid-area: co3; }
+  .gin .subtituloP {
+    font-size: 60px;
+    padding: 20px;
+    margin: 100px;
+    text-align: center; }
+
+.infoProdu {
+  grid-area: infoProdu;
+  overflow: hidden; }
+  .infoProdu .productoS {
+    display: grid;
+    grid-template-areas: "ginN ginR" "gin1 gin2" "gin20 ginA" "gin3 gin4";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr; }
+    .infoProdu .productoS .ginN {
+      grid-area: ginN;
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+    .infoProdu .productoS .ginR {
+      grid-area: ginR;
+      display: flex;
+      justify-content: center; }
+    .infoProdu .productoS .gin20 {
+      grid-area: gin20;
+      display: flex;
+      justify-content: center; }
+    .infoProdu .productoS .ginA {
+      grid-area: ginA;
+      display: flex;
+      justify-content: center; }
+    .infoProdu .productoS .gin1 {
+      display: flex;
+      justify-content: center;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 15px;
+      grid-area: gin1; }
+    .infoProdu .productoS .gin2 {
+      display: flex;
+      justify-content: center;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 15px;
+      grid-area: gin2; }
+    .infoProdu .productoS .gin3 {
+      display: flex;
+      justify-content: center;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 15px;
+      grid-area: gin3; }
+    .infoProdu .productoS .gin4 {
+      display: flex;
+      justify-content: center;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 15px;
+      grid-area: gin4; }
+
+.tituloCocktail {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+  font-weight: normal;
+  text-align: center;
+  font-size: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase; }
+
+.cocktail {
+  display: grid;
+  grid-template-areas: "tituloTragos tituloTragos2" "img1 img2" "p1 p2" "tituloTragos3 tituloTragos4" "img3 img4" " p3 p4";
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-column-gap: 50px;
+  margin-left: 150px;
+  margin-bottom: 70px;
+  margin-top: 70px; }
+  .cocktail .tituloTragos {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-right: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .cocktail .tituloTragos1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-right: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .cocktail .tituloTragos2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-right: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .cocktail .tituloTragos3 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-right: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .cocktail .img1 {
+    display: flex;
+    justify-content: center; }
+  .cocktail .img2 {
+    display: flex;
+    justify-content: center; }
+  .cocktail .img3 {
+    display: flex;
+    justify-content: center; }
+  .cocktail .img4 {
+    display: flex;
+    justify-content: center; }
+  .cocktail .p1 {
+    display: flex;
+    justify-content: center;
+    padding-right: 170px;
+    padding-top: 15px;
+    padding-bottom: 40px; }
+  .cocktail .p2 {
+    display: flex;
+    justify-content: center;
+    padding-right: 170px;
+    padding-top: 15px;
+    padding-bottom: 40px; }
+  .cocktail .p3 {
+    display: flex;
+    justify-content: center;
+    padding-right: 170px;
+    padding-top: 15px;
+    padding-bottom: 40px; }
+  .cocktail .p4 {
+    display: flex;
+    justify-content: center;
+    padding-right: 170px;
+    padding-top: 15px;
+    padding-bottom: 40px; }
+
+.tituloS {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+  background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+  font-weight: normal;
+  text-align: center;
+  font-size: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase; }
+
+.subtituloS {
+  font-size: 60px;
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.epigrafe {
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 100px;
+  text-align: center; }
+
+.fondoCon {
+  background-image: url("../img/vieja-textura-de-madera-para-el-fondo-del-web-46832940.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.imageS {
+  display: flex;
+  justify-content: center; }
+
+.infoSobre .dondeEncontrarnos .dondeTitulo {
+  font-size: 30px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  text-align: center; }
+
+.infoSobre .dondeEncontrarnos .dondeSub {
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
+
+.infoSobre .dondeEncontrarnos .iframe {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 80px; }
 
 footer {
+  overflow: hidden;
+  background-color: gray;
+  list-style: none;
+  text-align: justify; }
+
+.footer0 {
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -141,6 +384,9 @@ footer {
   list-style: none;
   text-align: justify;
   grid-area: footer; }
+
+footer nav ul {
+  list-style: none; }
 
 .footerGrid {
   display: grid;
@@ -154,6 +400,8 @@ footer {
     text-align: center;
     font-size: 17px;
     text-transform: uppercase; }
+    .footerGrid .footerTitulo nav ul {
+      list-style: none; }
   .footerGrid .footerTitulo1 {
     padding: 10px;
     grid-area: footerTitulo1;
@@ -167,3 +415,82 @@ footer {
     font-size: 17px;
     text-transform: uppercase;
     text-decoration: none; }
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  body {
+    background-color: red; }
+  .menu {
+    display: grid;
+    grid-template-areas: "logo menuLista";
+    padding: 2rem;
+    z-index: 2;
+    position: sticky;
+    top: 1rem; }
+    .menu .logo {
+      display: flex;
+      justify-content: flex-start; }
+    .menu .menuLista {
+      display: flex;
+      justify-content: flex-end;
+      gap: 3rem;
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      padding-top: 40px; }
+      .menu .menuLista .enlaces:hover {
+        text-decoration: none;
+        transform: scale(1.2);
+        transition: all .2s ease-in-out; }
+  .imgFondoIndex {
+    padding: 1.5rem;
+    background-image: url("../img/271237891_901745523822787_156612221471523007_n.jpg");
+    font-weight: normal;
+    text-align: center;
+    font-size: 5.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase; }
+  .productos {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-column-gap: 3rem;
+    grid-template-areas: "tituloindex" "producto" "pro1" "producto2" "pro2";
+    font-size: 1.8rem;
+    background-image: url("../img/b89ebed7f9964efbed1010c2447a7ed2.jpg");
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    padding: 10px; }
+    .productos .tituloIndex {
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+      grid-area: tituloindex; }
+    .productos .producto:hover {
+      display: flex;
+      justify-content: center;
+      grid-area: producto;
+      transition: all .5s ease-in-out;
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      filter: blur(5px); }
+      .productos .producto:hover .imagenI {
+        width: 20%; }
+    .productos .producto1:hover {
+      display: flex;
+      justify-content: center;
+      grid-area: producto2;
+      transition: all .5s ease-in-out;
+      filter: blur(5px);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); }
+      .productos .producto1:hover .imagenI {
+        width: 20%; }
+    .productos .pro1 {
+      display: flex;
+      justify-content: center;
+      grid-area: pro1; }
+    .productos .pro2 {
+      grid-area: pro2;
+      display: flex;
+      justify-content: center; } }
