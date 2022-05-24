@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Gin el marino</title>
 </head>
 
@@ -18,8 +22,14 @@
     <div class="divBodyI">
     <header>
         <nav class="menu">
+            
+                <input type="checkbox" id="check">
+                <label for="check" class="checkboton">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            
             <a class="logo" href="#">
-                <img src="img/29bf89dd36f34b2d8ded8c5d9941a093.gif" alt="logo" width=150 height=80>
+                <img src="img/271269468_465407721896870_2971118939793926815_n.jpg" alt="logo" height="60" width="60">
             </a>
             <ul class="menuLista">
                  <li class="enlaces">
@@ -33,7 +43,7 @@
                     Productos
                     </a>
                 </li>
-                <li class="enlaces">
+                <li class="active">
                     <a href="#">
                         Home
                     </a>
@@ -51,13 +61,12 @@
             </ul>
         </nav>
     </header>
-        
+        <!--Apartir de aca va la informacion del producto-->
     <main>
         <div class="imgFondoIndex">
             <h1>
                 Gin 100% artesanal
             </h1>
-            <!--aca va la informacion del producto-->
            
         </div>
    
@@ -66,79 +75,90 @@
                 Nuestros productos
             </h2>
             <div class="producto">
-            <a href="pages/productos.html"><img class="imagenI" src="img/277081020_154443063648958_2469669232487787807_n.gif" alt="producto principal"></a>
+                <a href="pages/productos.html"><img class="imagenI" src="img/WhatsApp Image 2022-05-20 at 12.27.00 PM.jpg" alt="producto principal"></a>
             </div>
             <p class="pro1">
-                 Lorem ipsum dolor sit
+                 Gran variedad de gins con botanicos y sabores unicos que solo vas a poder encontrar aca.
             </p>
             <div class="producto1">
                 <a href="pages/productos.html"><img class="imagenI" src="img/277081020_154443063648958_2469669232487787807_n.gif" alt="producto principal"></a>
             </div>
-                    <p class="pro2">
-                    Lorem, ipsum dolor 
-                    </p>
+                <p class="pro2">
+                    Contamos con botanicos deshidratados de primera calidad para mejorar tu cocktail.
+
+ 
+                </p>
         </section>
-    </div>
-    </main>     
+        </div>
+    </main>   
+     <!--Apartir de aca van las imagenes de los cocktails-->  
     <div class="infoIndex">
         <section class="cocktails_">
             <h3 class="TituloCocktailsIndex">
                 Cocktails
             </h3>
             <div class="co1">
-                    <a href="pages/cocktails.html"><img class="imagenIn" src="img/277081020_154443063648958_2469669232487787807_n.gif" alt="imagen de un cocktail"></a>
+                <a href="pages/cocktails.html"><img class="imagenIn" src="img/como_hacer_un_gin_tonic_con_pimienta_51469_orig.jpg" alt="imagen de un cocktail" ></a>
             </div>
             <div class="co2">
-                <a href="pages/cocktails.html"><img class="imagenIn" src="img/277081020_154443063648958_2469669232487787807_n.gif" alt="imagen de un cocktail"></a>
+                <a href="pages/cocktails.html"><img class="imagenIn" src="img/como_hacer_un_gin_tonic_de_frutos_rojos_51459_orig.jpg" alt="imagen de un cocktail"></a>
             </div>
             <div class="co3">
-                <a href="pages/cocktails.html"><img class="imagenIn" src="img/277081020_154443063648958_2469669232487787807_n.gif" alt="imagen de un cocktail"></a>
-                </div>
-
+                <a href="pages/cocktails.html"><img class="imagenIn" src="img/cóctel-Negroni-3.jpg" alt="imagen de un cocktail"></a>
+            </div>
         </section>
     </div>    
 
     <footer class="footer0">
         <div class="footerGrid">
             <div class="footerTitulo">
+                
                 <p> 
-                    About us
+                    información
                 </p>
+                <div class="footerSub">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Para mayor informacion dirigirse a la seccion de contacto y llenar el formulario. 
                 </p>
+                </div>
             </div>
            
     
             <div class="footerTitulo1">
+                
                 <p> 
                     Redes sociales
                 </p>
-            <nav>
-                <ul>
-                    <li><a href="https://instagram.com/"><img src="../img/icon-white-ig.png" alt="Instagram "></a></li>
-                    <li><a href="https://facebook.com/"><img src="../img/icon-white-fb.png" alt="facebook"></a></li>
-                    <li><a href="https://youtube.com/"><img src="../img/icon-white-yt.png" alt="youtube"></a></li>
-                </ul>
-            </nav>
+                
+                <nav class="footerSub1">
+                    <ul>
+                        <li><a href="https://www.instagram.com/elmarinogin/"><img src="../img/icon-white-ig.png" alt="Instagram "></a></li>
+                        <li><a href="https://facebook.com/"><img src="../img/icon-white-fb.png" alt="facebook"></a></li>
+                        <li><a href="https://youtube.com/"><img src="../img/icon-white-yt.png" alt="youtube"></a></li>
+                    </ul>
+                </nav>
+                
             </div>
             <div class="footerTitulo2">
+                
                 <P> 
                     contacto
-                </P>  
-            <nav>
-                <ul>
-                    <li>Telefono:</li>
-                    <li>Mail:</li>
-                    <li>Dirección:</li>
-                </ul>
-            </nav>  
+                </P> 
+                <nav class="footerSub2">
+                    <ul>
+                        <li>Telefono: 03471568668</li>
+                        <li>Mail: elmarinogin@hotmail.com</li>
+                        <li>Dirección: Calle Rivadavia 1338- Cañada de Gomez</li>
+                    </ul>
+                </nav>  
+                
             </div>
             
         </div>
         </footer>
 
     </div>
+
 </body>
 
 </html>

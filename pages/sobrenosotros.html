@@ -10,39 +10,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <title>Sobre nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Sobre nosotros | El MARINO GIN</title>
 </head>
 
 <body>
     <div class="divBodySo">
         <header>
             <nav class="menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkboton">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
                 <a class="logo" href="../index.html">
-                    <img src="../img/29bf89dd36f34b2d8ded8c5d9941a093.gif" alt="logo" width=150 height=80>
+                    <img src="../img/271269468_465407721896870_2971118939793926815_n.jpg" alt="logo" height="60" width="60">
                 </a>
                 <ul class="menuLista">
-                     <li>
+                     <li class="enlaces">
                         <a href="../pages/cocktails.html">
                         Cocktails
                         </a>
     
                     </li>
-                    <li>
+                    <li class="enlaces">
                         <a href="../pages/productos.html">
                         Productos
                         </a>
                     </li>
-                    <li>
+                    <li class="enlaces">
                         <a href="../index.html">
                             Home
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="../pages/sobrenosotros.html">
                             Sobre nosotros
                         </a>
                     </li>
-                    <li>
+                    <li class="enlaces">
                         <a href="../pages/contacto.html">
                          Contacto
                         </a>
@@ -50,7 +55,7 @@
                 </ul>
             </nav>
         </header>
-       
+       <!--Apartir de aca va la informacion sobre el cliente-->
     <main>
         <div class="tituloS">
             <h1>
@@ -65,15 +70,15 @@
         </div>
         <div class="epigrafe">
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eaque esse eveniet nam! Quam, molestiae animi accusantium delectus eum temporibus quod doloremque! Vitae soluta quaerat qui itaque deleniti. Quos, consequuntur!
+                Buscando los mejores ingredientes posibles y teniendo siempre una atención al detalle y el elevado contenido de enebro han convertido a The horse en una ginebra realmente auténtica y con mucho sabor. Lo cual nos llevo a la necesidad de tener que expandirnos para poder aumentar nuestra produccion, para asi poder satisfacer a todos nuestros clientes.
             </p>
         </div>
-        </div>    
-        <div class="imageS">
-            <img src="../img/277081020_154443063648958_2469669232487787807_n.gif" alt="imagen del establecimiento">
         </div>
+        <div class="imagenS">
+            <img class="imageS" src="../img/destileria.jpg" alt="imagen del establecimiento" width="600px" height="600px">
+        </div>    
     </main>
-
+        <!--Apartir de aca va la ubicacion del establecimiento-->
     <div class="infoSobre">
         <section class="dondeEncontrarnos">
             <h2 class="dondeTitulo">
@@ -81,10 +86,10 @@
             </h2>
 
             <p class="dondeSub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus consectetur beatae. Similique eligendi mollitia dolorem odio optio, delectus asperiores fugiat dolore ipsum commodi aperiam nihil exercitationem sit deserunt labore.
+            Nos encontramos situados en la zona rural de Las rosas. Puede llegar hasta nuestro ubicacion bajando por la ruta 28, siguiendo por un camino de tierra hasta toparse con nuestras instalaciones.
             </p>
             <div class="iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d32079.27957084449!2d-60.68442011059579!3d-32.959974488847465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1646948809661!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.474624072931!2d-61.60602258500492!3d-32.56686408103592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c9f6a1b3c58fef%3A0x779240a54cd082b7!2sBelgrano%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1652829259599!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -93,38 +98,47 @@
     <footer class="footer0">
         <div class="footerGrid">
             <div class="footerTitulo">
+                
                 <p> 
-                    About us
+                    Información
                 </p>
+                <div class="footerSub">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Para mayor informacion dirigirse a la seccion de contacto y llenar el formulario. 
+ 
                 </p>
+                </div>
             </div>
            
     
             <div class="footerTitulo1">
+                
                 <p> 
                     Redes sociales
                 </p>
-            <nav>
-                <ul>
-                    <li><a href="https://instagram.com/"><img src="../img/icon-white-ig.png" alt="Instagram "></a></li>
-                    <li><a href="https://facebook.com/"><img src="../img/icon-white-fb.png" alt="facebook"></a></li>
-                    <li><a href="https://youtube.com/"><img src="../img/icon-white-yt.png" alt="youtube"></a></li>
-                </ul>
-            </nav>
+                
+                <nav class="footerSub1">
+                    <ul>
+                        <li><a href="https://www.instagram.com/elmarinogin/"><img src="../img/icon-white-ig.png" alt="Instagram "></a></li>
+                        <li><a href="https://facebook.com/"><img src="../img/icon-white-fb.png" alt="facebook"></a></li>
+                        <li><a href="https://youtube.com/"><img src="../img/icon-white-yt.png" alt="youtube"></a></li>
+                    </ul>
+                </nav>
+                
             </div>
             <div class="footerTitulo2">
+                
                 <P> 
                     contacto
-                </P>  
-            <nav>
-                <ul>
-                    <li>Telefono:</li>
-                    <li>Mail:</li>
-                    <li>Dirección:</li>
-                </ul>
-            </nav>  
+                </P> 
+                <nav class="footerSub2">
+                    <ul>
+                        <li>Telefono: 03471568668</li>
+                        <li>Mail: elmarinogin@hotmail.com</li>
+                        <li>Dirección: Calle Rivadavia 1338- Cañada de Gomez</li>
+                    </ul>
+                </nav>  
+                
             </div>
             
         </div>

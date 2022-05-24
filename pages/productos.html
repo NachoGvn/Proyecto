@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Productos | EL MARINO GIN</title>
     
 </head>
 
@@ -18,32 +19,36 @@
     <div class="divBodyP">
         <header>
             <nav class="menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkboton">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
                 <a class="logo" href="../index.html">
-                    <img src="../img/29bf89dd36f34b2d8ded8c5d9941a093.gif" alt="logo" width=150 height=80>
+                    <img src="../img/271269468_465407721896870_2971118939793926815_n.jpg" alt="logo" height="60" width="60">
                 </a>
                 <ul class="menuLista">
-                     <li>
+                     <li class="enlaces">
                         <a href="../pages/cocktails.html">
                         Cocktails
                         </a>
     
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="../pages/productos.html">
                         Productos
                         </a>
                     </li>
-                    <li>
+                    <li class="enlaces">
                         <a href="../index.html">
                             Home
                         </a>
                     </li>
-                    <li>
+                    <li class="enlaces">
                         <a href="../pages/sobrenosotros.html">
                             Sobre nosotros
                         </a>
                     </li>
-                    <li>
+                    <li class="enlaces">
                         <a href="../pages/contacto.html">
                          Contacto
                         </a>
@@ -51,6 +56,7 @@
                 </ul>
             </nav>
         </header>
+        <!--Apartir de aca va la informacion del producto-->
     <main class="gin">
         <div class="tituloP">
             <h1>
@@ -64,35 +70,39 @@
             </h2>
         </div>
     </main>
-
+    <!--Apartir de aca van las imagenes e info sobre los productos-->
     <div class="infoProdu">
         <section class="productoS">
-            <div class="ginN">
-                <img class="imagenPro" src="../img/277081020_154443063648958_2469669232487787807_n.gif" alt="gin normal">
-            </div>
-                <p class="gin1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div>
+                <h3 class="titulop">Gin 22 botanicos</h3>
+                <img class="imagenPro" src="../img/gin22botanicos.jpg" alt="gin normal">
+                <p class="gin1">
+                    Los botánicos de la ginebra The horse son una singular receta que parte de los cuatro ingredientes fundamentales que cualquier ginebra debe tener: enebro, raíz de Angélica, cilantro y un cítrico.
                 </p>
-            <div class="ginR"> 
-                <img class="imagenPro" src="../img/277081020_154443063648958_2469669232487787807_n.gif" alt="gin de frutos rojos">
             </div>
+            <div> 
+                <h3 class="titulop1">Gin de frutos rojos</h3>
+                <img class="imagenPro1" src="../img/186640300_1480307182312610_6067490140337213826_n.jpg" alt="gin de frutos rojos">
                 <p class="gin2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Ginebra rosa fabricada con la receta original del London Dry gin más el aroma de fresa natural para darle un intenso y delicioso sabor a fresa. 
                 </p>
-            
-            <div class="gin20">   
-                <img class="imagenPro" src="../img/277081020_154443063648958_2469669232487787807_n.gif" alt="gin de 20 botanicos">
             </div>
+            <div>
+                <h3 class="titulop2">Gin de 20 botanicos</h3>   
+                <img class="imagenPro2" src="../img/ginvioleta.jpg" alt="gin de 20 botanicos">
                 <p class="gin3">
-                ipsum dolor, sit amet consectetur adipisicing elit. 
+                    20 botánicos seleccionados a mano, macerados en nuestras instalaciones durante 24 horas para crear una ginebra más intensa y sofisticada.
+
                 </p>
-           
-            <div class="ginA">    
-                <img class="imagenPro" src="../img/277081020_154443063648958_2469669232487787807_n.gif" alt="gin aniejado">
             </div>
-                <p class="gin4">
-                ipsum dolor sit, amet consectetur adipisicing elit. 
-                </p>
            
+            <div>  
+                <h4 class="titulop3">Gin añejado</h4>  
+                <img class="imagenPro3" src="../img/ginaniejo.jpg" alt="gin aniejado">
+                <p class="gin4">
+                    Esta ginebra añejada, esta hecha con un intenso toque de enebro y fuertes notas cítricas, es una auténtica London Dry para quienes disfrutan del sabor auténtico de la ginebra.
+                </p>
+            </div>
         </section>
     </div>
 
@@ -100,38 +110,47 @@
     <footer class="footer0">
         <div class="footerGrid">
             <div class="footerTitulo">
+                
                 <p> 
-                    About us
+                    Información
                 </p>
+                <div class="footerSub">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Para mayor informacion dirigirse a la seccion de contacto y llenar el formulario. 
+
                 </p>
+                </div>
             </div>
            
     
             <div class="footerTitulo1">
+                
                 <p> 
                     Redes sociales
                 </p>
-            <nav>
-                <ul>
-                    <li><a href="https://instagram.com/"><img src="../img/icon-white-ig.png" alt="Instagram "></a></li>
-                    <li><a href="https://facebook.com/"><img src="../img/icon-white-fb.png" alt="facebook"></a></li>
-                    <li><a href="https://youtube.com/"><img src="../img/icon-white-yt.png" alt="youtube"></a></li>
-                </ul>
-            </nav>
+                
+                <nav class="footerSub1">
+                    <ul>
+                        <li><a href="https://www.instagram.com/elmarinogin/"><img src="../img/icon-white-ig.png" alt="Instagram "></a></li>
+                        <li><a href="https://facebook.com/"><img src="../img/icon-white-fb.png" alt="facebook"></a></li>
+                        <li><a href="https://youtube.com/"><img src="../img/icon-white-yt.png" alt="youtube"></a></li>
+                    </ul>
+                </nav>
+                
             </div>
             <div class="footerTitulo2">
+                
                 <P> 
                     contacto
-                </P>  
-            <nav>
-                <ul>
-                    <li>Telefono:</li>
-                    <li>Mail:</li>
-                    <li>Dirección:</li>
-                </ul>
-            </nav>  
+                </P> 
+                <nav class="footerSub2">
+                    <ul>
+                        <li>Telefono: 03471568668</li>
+                        <li>Mail: elmarinogin@hotmail.com</li>
+                        <li>Dirección: Calle Rivadavia 1338- Cañada de Gomez</li>
+                    </ul>
+                </nav>  
+                
             </div>
             
         </div>
